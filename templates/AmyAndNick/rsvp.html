@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RSVP</title>
+	</head>
+	
+	<body>
+		<h1>Please fill in your information</h1>
+		
+		<form id="rsvp_form" method="post" action="/AmyAndNick/rsvp/">
+			
+			{% csrf_token %}
+			{% for hidden in form.hidden_fields %}
+				{{ hidden }}
+			{% endfor %}
+			
+			{% for field in form.visible_fields %}
+				{{ field.errors }}
+				{{ field.help_text }}
+				{{ field }} <br />
+			{% endfor %}
+			
+			<input type="submit" name="submit" value="rsvp" /><br />
+			<a href="/AmyAndNick/">Return to home page</a><br />
+		</form>
+	</body>
+
+</html>
