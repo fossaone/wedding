@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>RSVP</title>
-	</head>
+{% extends 'AmyAndNick/base.html' %}
+
+
+{% block title %} RSVP {% endblock %}
 	
-	<body>
+{% block body_block %}
 		<h1>Please fill in your information</h1>
 		
 		<form id="rsvp_form" method="post" action="/AmyAndNick/rsvp/">
@@ -21,8 +20,5 @@
 			{% endfor %}
 			
 			<input type="submit" name="submit" value="rsvp" /><br />
-			<a href="/AmyAndNick/">Return to home page</a><br />
 		</form>
-	</body>
-
-</html>
+{% endblock %}

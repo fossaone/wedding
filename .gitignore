@@ -1,0 +1,11 @@
+#Ignore secrets
+config/api_keys.py
+
+#Ignore compiled python
+*.pyc
+
+#Ignore db and backups
+db*
+
+#Ignore stupid mac files
+.DS_Store

@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+{% extends 'AmyAndNick/base.html' %}
 
 {% load staticfiles %}
 
-<html>
+{% block title %}Amy and Nick{% endblock %}
 
-	<head>
-		<title>Amy and Nick</title>
-	</head>
-	
-	<body>
-		<h1> Thanks for visiting our website!</h1>
-			hello world! <strong>{{ boldmessage }}</strong><br />
-			<img src="{% static "images/BanffCrowFootLake.JPG" %}" alt="Picture of Amy and Nick" /> <br />
-			<a href="/AmyAndNick/rsvp/">RSVP</a><br />
-	</body>
-</html>
+{% block body_block %}
+    <div class="page-header">
+                <h1>Thanks for visiting our website!</h1>
+				<!--/div>
+            <div>
+            <p></strong>.</p-->
+
+            <!--img  width="90" height="100" src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /--> <!-- New line -->
+            <img src="{% static "images/BanffCrowFootLake.JPG" %}" alt="Picture of Amy and Nick" /> 
+			<!--a href="/AmyAndNick/rsvp/">RSVP</a><br /-->
+			</div>
+{% endblock %}

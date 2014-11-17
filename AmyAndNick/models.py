@@ -4,6 +4,10 @@ from django.db import models
     (True, 'Yes'),
     (False, 'No')
 )'''
+
+#TODO Add data stamp to creation of guest
+#TODO Make 3 Boolean fields required, may need to change them to choices
+
 # Create your models here.
 class Guest(models.Model):
     name = models.CharField(max_length=128)
