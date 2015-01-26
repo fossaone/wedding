@@ -1,0 +1,40 @@
+{% extends 'AmyAndNick/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Schedule{% endblock %}
+
+{% block body_block %}
+   
+	<h1>Schedule of Events</h1>
+		<div class="inner">
+				<ul class="list_outer">
+					<li>Friday April 24<sup>th</sup></li>
+						<ul class="list_inner">
+							<li>5:30pm -  6:30pm: Check-in</li>
+							<li>6:30pm - 8:00pm: BBQ Dinner</li>								
+							<li>8:00pm - 10:00pm: Campfire and S&#39;mores</li>							
+						</ul>
+					</br>
+					<li>Saturday April 25<sup>th</sup></li>
+						<ul  class="list_inner">
+							<li>8:00am - 9:00am: Breakfast</li>
+							<li>9:00am - 12:00am: <a href="{% url 'activities' %}">Camp Activities</a></li>
+							<li>12:00pm - 1:00pm: Lunch</li>
+							<li>1:00pm - 3:00pm: <a href="{% url 'activities' %}">Camp Activities</a></li>
+							<li>3:00pm - 4:30pm: Get Dolled-Up</li>
+							<li>4:30pm - 5:00pm: Wedding Ceremony</li>
+							<li>5:00pm - 6:00pm: Cocktail Hour</li>
+							<li>6:00pm - 10:00pm: Dinner Reception</li>
+							<li>10:00pm - Late: After-Party</li>
+						</ul>
+					</br>
+					<li>Sunday April 26<sup>th</sup></li>
+					<ul class="list_inner">
+						<li>9:00am - 10:30am: Farewell Brunch</li>							
+						<li>10:30am - 12:00pm: Checkout</li>							
+					</ul>
+				</ul>
+		</div>
+			
+{% endblock %}

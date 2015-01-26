@@ -1,0 +1,74 @@
+{% extends 'AmyAndNick/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Location{% endblock %}
+
+<!--head> 
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	      function initialize() {
+	        var mapCanvas = document.getElementById('map-canvas');
+	        var mapOptions = {
+	          center: new google.maps.LatLng(37.163044,-122.139185),
+	          zoom: 8,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+  			  
+	        }
+	        var map = new google.maps.Map(mapCanvas, mapOptions)
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+		  
+</head-->
+
+{% block body_block %}
+
+
+	
+	<div>		
+		<h3>We will be celebrating at YMCA Camp Campbell in Boulder Creek CA</h3>
+		<img src="{% static "images/Pool_2b.JPG" %}"> 
+		
+    </div>	
+		
+		<h3>Location </h3>
+		<h4>YMCA Camp Campbell</br>16275 State Route 9</br> Boulder Creek, CA 95006</h4>
+		<h5> <a href="http://www.ymcasv.org/ymcacampcampbell/pdfs/route_map.pdf" target="_blank">Click here for directions</a></h5>
+	
+			
+	
+	</br>
+	
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<!--div> style="overflow:hidden;height:400px;width:500px;"-->
+		<div id="gmap_canvas"></div> <!--style="height:400px;width:500px;"></div-->
+		<!--style>#gmap_canvas img{max-width:none!important;background:none!important}</style-->
+		<!--a class="google-map-code" href="http://www.trivoo.net" id="get-map-data">http://www.trivoo.net/</a-->
+		<!--/div-->
+		<script type="text/javascript"> 
+		function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(37.163044,-122.139185),mapTypeId: google.maps.MapTypeId.ROADMAP};
+		map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+		marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.163044, -122.139185)});
+		infowindow = new google.maps.InfoWindow({content:"<b>YMCA Camp Campbell</b><br/>16275 State Route 9, Boulder Creek, CA 95006<br/> " });
+		google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
+		infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+		</script>
+					
+		  		  <!--div style="overflow:hidden;height:400px;width:500px;"-->
+		  			  <!--div id="map-canvas"></div-->
+		  			  <!--style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+		  			  <a class="google-map-code" href="http://www.trivoo.net" id="get-map-data">http://www.trivoo.net/</a>
+		  		  </div-->
+						  
+	</br>	  
+	<h3>Near by Airports</h3>		
+	<ul class="list">
+		<li><a href="http://www.flysanjose.com/" target="_blank">San Jose International (SJC)</li>
+		<li><a href="http://www.flysfo.com/" target="_blank">San Francisco International (SFO)</li>
+		<li><a href="http://www.oaklandairport.com/" target="_blank">Oakland International (OAK)</li>
+	</ul>
+	</br>
+			    
+			
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'AmyAndNick/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Activities{% endblock %}
+
+{% block body_block %}
+   
+	<h1>Here is a list of activities you can particpate in at camp campbell</h1>
+		<table class="img_table1" align="center">
+			<tr>
+				<td><img style="height:auto; width:auto; max-width:300px; max-height:200px;" src="{% static "images/archery.jpg" %}">
+				</td>
+				<td><img style="height:auto; width:auto; max-width:134px; max-height:200px;" src="{% static "images/RockWalls.JPG" %}">
+				</td>
+				<td><img style="height:auto; width:auto; max-width:134px; max-height:200px;" src="{% static "images/RockWallLarge.JPG" %}" >
+				</td>
+				<!--td><img src="{% static "images/archery.jpg" %}" height="200" width="300"></td>
+				<td><img src="{% static "images/pool_2b.jpg" %}" height="200" width="427"></td>
+				<td><img src="{% static "images/ropescourse_001.jpg" %}" height="200" width="250"></td-->
+				
+			</tr>
+		</table>
+		</br line-height="5px">
+		<table class="img_table2" align="center">
+			<tr>
+					<!--td><iframe width="267" height="200"
+	src="http://youtu.be/isn4tGswnqE">
+	</iframe></td-->
+				<td><img style="height:auto; width:auto; max-width:427px; max-height:200px;" src="{% static "images/pool_2b.jpg" %}">
+				</td>
+				<td><img style="height:auto; width:auto; max-width:250px; max-height:200px;" src="{% static "images/ropescourse_001.jpg" %}" >
+				</td>	
+			</tr>
+		</table>
+		<div>
+				<ul class="list_inline">
+					<li>Archery</li>
+					<li>Basketball</li>
+					<li>Campfires</li>
+					<li>Climbing Wall</li>
+					<li>Disc Golf</li>
+				</ul>
+		</div>
+		
+		<div>
+				<ul class="list_inline">
+					<li>Hikes</li>
+					<li><a href="http://youtu.be/isn4tGswnqE" target="_blank">Mole Hole</a></li>
+					<li>Ropes Course</li>
+					<li>Pool w/ water slide</li>
+					<li>Tennis</li>
+				</ul>
+		</div>
+		<!--table class="img_table" align="center">
+			<tr>
+				<td><iframe width="267" height="200"
+src="http://youtu.be/isn4tGswnqE">
+</iframe></td>
+				<td><img style="height:auto; width:auto; max-width:427px; max-height:200px;" src="{% static "images/pool_2b.jpg" %}"></td>
+				<td><img style="height:auto; width:auto; max-width:250px; max-height:200px;" src="{% static "images/ropescourse_001.jpg" %}" ></td>	
+			</tr>
+		</table-->
+			
+{% endblock %}

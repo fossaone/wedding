@@ -14,8 +14,8 @@ class Guest(models.Model):
     email_address = models.EmailField(max_length=75)
     #date = models.DateTimeField('date entered')
     significant_other = models.CharField(max_length=128, blank=True)
-    children = models.IntegerField(default=0)    # of kids between 3 and 12.
-    babies = models.IntegerField(default=0)                 # of kids under 3
+    #children = models.IntegerField(default=0)    # of kids between 3 and 12.
+    #babies = models.IntegerField(default=0)                 # of kids under 3
     rehersal_dinner = models.BooleanField()
     wedding = models.BooleanField()
     stay_in_cabin = models.BooleanField()

@@ -43,3 +43,18 @@ def rsvp(request):
     # Bad form (or form details), no form supplied...
     # Render teh form with error message (if any).
     return render(request, 'AmyAndNick/rsvp.html', {'form': form})
+    
+def location(request):
+    return render(request, 'AmyAndNick/location.html')
+    
+def schedule(request):
+    return render(request, 'AmyAndNick/schedule.html')
+    
+def accomodations(request):
+    return render(request, 'AmyAndNick/accomodations.html')
+
+def activities(request):
+        return render(request, 'AmyAndNick/activities.html')
+
+def registry(request):
+    return render(request, 'AmyAndNick/registry.html')

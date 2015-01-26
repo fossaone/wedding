@@ -35,12 +35,11 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'p*h-#1=c-2o&#_-wqp&h3!7q*ts2n#np36fo1mgigpq1c)l$fz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False #True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['vmgame2014.pythonanywhere.com']
 
 # Application definition
 

@@ -1,0 +1,273 @@
+/*
+ * Globals
+ */
+
+/* font */
+h1 { 
+	font-size:160%;
+}
+h2 {
+	font-size:120%;
+}
+h3 {
+	font-size:110%;
+}
+
+/* Links */
+a,
+a:focus {
+  color: #333;
+}
+
+a:hover {
+    color: #00FFFF;
+	text-decoration: none;
+    border-bottom-color: #FF00FF;
+}
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff; /*#333;*/
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #FFFFFF; /*#333; /*#fff;*/
+  border: none; /*1px solid #fff;*/
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  /*background-color: #333;*/
+  background-color: #FFFFFF;
+}
+body {
+  /*color: #fff;*/
+  color: #333;
+  text-align: center;
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5); */
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5); */
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+} 
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/* 
+ * For images 
+ */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+ * Header
+ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+	background-color: White;
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; /* IE8 proofing */
+  color: rgba(255,255,255);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+	color:#00FFFF;
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a {
+  color: #333;
+  border-bottom-color: #FF00FF;
+}
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #00FFFF;
+  border-bottom-color: #FF00FF;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+	background-color: Wite;
+	border-bottom: 2px solid rgb(220,220,220);
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 1000px;
+  }
+}
+
+/* Added to shift content down below the navbar */
+hr {
+	margin-top: 40px;
+}
+
+/* Add stuff for map */
+#gmap_canvas {
+	width: 500px;
+    height: 400px;
+	background-color: #CCC;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Images */
+.location_image {
+	background-image: url(../images/Pool_2b.JPG);
+    /* here we are applying a single background image to our first block level container element */
+    /* (could be anything, but it is a div in the live example. */
+	padding-bottom: 250px;
+}
+
+.text_in_pict {
+	color: white;
+	text-shadow:
+	-1px -1px 0 #000,
+	 1px -1px 0 #000,
+	-1px 1px 0 #000,
+	 1px 1px 0 #000;
+}
+/* list formating */
+.list_outer {
+    list-style-type: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.list_outer > li {
+	font-weight: bold;
+}
+.list_inner {
+    list-style-type: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.list_inline li {
+	display: inline;
+	padding: 10px;
+	/*background-color: #333333;
+	color: #FFFFFF;*/
+}
+
+/* for tables */
+.img_table1 td {
+    padding-right: 20px;
+	margin: 0;
+	border: 0;
+}
+.img_table2 td {
+    padding-right: 10px;
+	margin: 0;
+	border: 0;
+}
