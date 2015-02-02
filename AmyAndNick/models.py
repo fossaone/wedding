@@ -18,8 +18,9 @@ class Guest(models.Model):
     #babies = models.IntegerField(default=0)                 # of kids under 3
     rehersal_dinner = models.BooleanField()
     wedding = models.BooleanField()
+    brunch = models.BooleanField()
     stay_in_cabin = models.BooleanField()
-    vegetarian = models.BooleanField()
+    #vegetarian = models.BooleanField()
     notes = models.CharField(max_length=256)
     #paid = models.BooleanField(default=False)
     
