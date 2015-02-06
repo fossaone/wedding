@@ -1,0 +1,35 @@
+{% extends 'AmyAndNick/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Schedule{% endblock %}
+
+{% block body_block %}
+   
+	<h1>Bring your sense of adventure! And…</h1>
+		
+			<div id="inner">
+				<ul  align="left">
+					<li>Chic wedding clothes</li>
+					<li>Clothes (and shoes) for playing outdoors<a href="{% url 'activities' %}">Camp Activities</a></li>
+					<li>Layers for when the sun goes down</li>
+					<li>Swimsuit and flip flops<a href="{% url 'activities' %}">Camp Activities</a></li>
+					<li>Water bottle</li>
+					<li>Toiletries</li>
+					<li>Hair dryer</li>
+					<li>Headlamp</li>
+					<li>Bug spray and sunblock</li>
+				</ul>
+			</div>
+			<h2>It would be great if you could bring the following, but don't worry if you can't we will provide them.</h2>
+				<div id="inner">
+					<ul align="left">
+						<li>Towel</li>
+						<li>Pillow</li>
+						<li>Sleeping bag or bed linens</li>
+					</ul>
+				</div>
+		
+	
+			
+{% endblock %}

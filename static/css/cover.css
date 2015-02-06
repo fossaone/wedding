@@ -75,6 +75,11 @@ body {
   padding: 30px;
 }
 
+#inner {
+    width: 50%;
+    margin: 0 auto;
+}
+
 /* 
  * For images 
  */
@@ -251,7 +256,9 @@ hr {
 	margin-left: 0;
 	padding-left: 1em;
 	text-indent: -1em;
+	/*text-align:justify;*/
 }
+
 
 .list_inline li {
 	display: inline;

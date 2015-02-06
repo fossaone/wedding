@@ -58,3 +58,6 @@ def activities(request):
 
 def registry(request):
     return render(request, 'AmyAndNick/registry.html')
+    
+def bring(request):
+    return render(request, 'AmyAndNick/bring.html')
