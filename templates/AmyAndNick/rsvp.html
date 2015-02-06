@@ -5,8 +5,8 @@
 	
 {% block body_block %}
 		<h2>There are two ways for you to let us know your plans.  You can return the RSVP card you received in the mail or you can fill out and submit the form below.  Thanks for letting us know.</h2>
-		
-		<form id="rsvp_form" method="post" action="/AmyAndNick/rsvp/">
+	<iframe src="https://docs.google.com/forms/d/1aGO193AAMViFLDQaD0WQ7XZhvyJYmfmSaPXO7Md_A3g/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>	
+		<!--form id="rsvp_form" method="post" action="/AmyAndNick/rsvp/">
 			
 			{% csrf_token %}
 			{% for hidden in form.hidden_fields %}
@@ -20,5 +20,7 @@
 			{% endfor %}
 			
 			<input type="submit" name="submit" value="rsvp" /><br />
-		</form>
+		</form-->
+			
+			
 {% endblock %}
