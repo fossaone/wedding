@@ -6,30 +6,49 @@
 
 {% block body_block %}
    
-                <h3>We hope you will stay with us at the camp</h3>
-				<!--/div>
-            <div>
-            <p></strong>.</p-->
-
-           
+			<h1>Our wish is for everyone to stay onsite with us! </h1>
+			<h2>Help us maximize fun and minimize boozy driving on dark windy roads.</h2>
+				<table class="img_table1" align="center">
+					<tr>
+						<td><img style="height:auto; width:auto; max-width:400px; max-height:200px;" src="{% static "images/tour_treetop_01.jpg" %}">
+						</td>
+						<td><img style="height:auto; width:auto; max-width:400px; max-height:200px;" src="{% static "images/tour_treetop_inside_01.jpg" %}">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul class="list_left">
+								<li>Cabins are located high among the redwood trees</li>
+								<li>Meals are included and will be served at the main lodge</li>
+								<li>There is minimal cell service, but WiFi available</li>
+							</ul>
+						</td>
+						<td>
+							<ul  class="list_left">
+								<li>Each heated cabin sleeps 14 people, bunk bed style</li>
+								<li>Each cabin has private showers and bathrooms</li>
+								<li>Each bunk has its own outlets, shelving units, and a lamp</li>
+							</ul>
+						</td>
+				</table>
+				<h2>Cost for staying at the cabins at Camp Campbell</h2>
+				<ul   class="list_left">
+					<li>Entire weekend - $195 per person (includes all food and drinks)</li>
+					<li>1 night only - $95 per person (includes lunch and drinks)</li>
+					<li>Want to take part in the camp activities but you are staying somewhere else, you can purchase breakfast and lunch for $30 per person</li>
+				</ul>
+				<h3>You can pay for your stay in the cabins or food at camp via the PayPal link below or by sending in a check with your RSVP card</h3>
+	
+	
 			<div>
-            	<img src="{% static "images/tour_treetop_01.jpg" %}" alt="Tree top cabins" /> 
-			</div>
-            <h3>Each cabin has a bathroom with showers and stalls</h3>
-			
-			<div>
-            	<img src="{% static "images/tour_treetop_inside_01.jpg" %}" alt="Inside tree top cabins" /> 
-			</div>
-			
-			<a href="/AmyAndNick/rsvp/">RSVP</a><br /-->
-			<div>
+				
 				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="MZ7WVCZBWBQCW">
 				<table align="center">
 				<tr><td><input type="hidden" name="on0" value="Camp Purchases">Camp Purchases</td></tr><tr><td><select name="os0">
-					<option value="1 night and food">1 night and food $95.00 USD</option>
 					<option value="2 nights and food">2 nights and food $195.00 USD</option>
+					<option value="1 night and food">1 night and food $100.00 USD</option>
 					<option value="Breakfast and Lunch on Sat.">Breakfast and Lunch on Sat. $30.00 USD</option>
 				</select> </td></tr>
 				<tr><td><input type="hidden" name="on1" value="Do you need linens?">Do you need linens?</td></tr><tr><td><select name="os1">
@@ -42,7 +61,34 @@
 				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				</form>
-					
+				
+	
 			</div>
+			<div>
+				<h1>Here is a list of hotels near the YMCA Camp Campbell.</h1>  
+				<h3>There are also a number of small cabins that can be rented in the area and can be found by searching on the internet.</h3>
+			</br>
+				<ul   class="list_inner">
+					<li><b>Quality Inn &amp; Suites Santa Cruz Mountains</b></li>
+					<li>9733 Highway 9, Ben Lomond, CA 95005</li>
+					<li>(831) 336-2292 </li>
+					<li><a href="http://www.qualityinn.com/hotel-ben_lomond-california-CA498" target="_blank">www.qualityinn.com</a></li>
+					</br>
+					<li><b>Fairview Manor Bed and Breakfast</b></li>
+					<li>245 Fairview Ave, Ben Lomond, CA 95005</li>
+					<li>(831) 336-3355</li>
+					<li><a href="http://www.fairviewmanor.com/index.html" target="_blank">www.fairviewmanor.com</a></li>
+					</br>
+					<li><b>Hilton Santa Cruz/Scotts Valley</b></li>
+					<li>6001 La Madrona Drive, Santa Cruz, CA 95060</li>
+					<li>(831) 440-1000</li>
+					<li><a href="http://www.google.com/url?q=http%3A%2F%2Fwww1.hilton.com%2Fen_US%2Fhi%2Fhotel%2FSJCSVHF-Hilton-Santa-Cruz-Scotts-Valley-California%2Findex.do&sa=D&sntz=1&usg=AFQjCNGA8vPAh1qSO4i5lU1tdplprSg4UA" target="_blank">www.hilton.com</a></li>
+					</br>
+					<li><b>Best Western Scotts Valley Inn</b></li>
+					<li>6020 Scott's Valley Drive, Scott's Valley, CA 95066</li>
+					<li>(831) 438-6666</li>
+					<li><a href="http://www.bestwesternscottsvalley.com" target="_blank">www.bestwesternscottsvalley.com</a></li>
+				</ul>
+			</div>	
 			
 {% endblock %}
