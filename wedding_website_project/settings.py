@@ -15,7 +15,7 @@ SETTINGS_DIR = os.path.dirname(__file__)
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
-TEMPLATE_DIRS = [ 
+TEMPLATE_DIRS = [
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -27,6 +27,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -35,11 +36,11 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'p*h-#1=c-2o&#_-wqp&h3!7q*ts2n#np36fo1mgigpq1c)l$fz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False#True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['vmgame2014.pythonanywhere.com']
+ALLOWED_HOSTS = ['vmgame2014.pythonanywhere.com','.amyandnickforlife.com']
 
 # Application definition
 
