@@ -102,6 +102,11 @@ img {
     top: 0;
 	background-color: White;
 }
+.navbar_index {
+    position: fixed;
+    top: 0;
+	background:transparent;
+}
 
 .masthead-brand {
   margin-top: 10px;
@@ -326,3 +331,9 @@ img.bg {
     margin-left: -512px;   /* 50% */
   }
 }
+
+.wrapper {background: url("../images/AmyNick_sky.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;}
