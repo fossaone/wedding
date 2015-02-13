@@ -266,6 +266,25 @@ hr {
 	text-align:justify;
 	font-size:90%;
 }
+.list_bring {
+    list-style-type: none;
+	/*margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;*/
+	text-align:justify;
+	font-size:110%;
+}
+
+.list_bring_outer {
+    list-style-type: none;
+    display:table;
+    margin:0 auto;
+	/*margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;*/
+	text-align:justify;
+	font-size:110%;
+}
 
 .list_inline li {
 	display: inline;
