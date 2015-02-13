@@ -3,7 +3,7 @@
  */
 
 /* font */
-h1 {
+h1 { 
 	font-size:160%;
 }
 h2 {
@@ -64,7 +64,7 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
-}
+} 
 .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -80,8 +80,8 @@ body {
     margin: 0 auto;
 }
 
-/*
- * For images
+/* 
+ * For images 
  */
 img {
     max-width: 100%;
@@ -164,28 +164,6 @@ img {
   font-weight: bold;
 }
 
-img.bg {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
-
 /*
  * Footer
  */
@@ -234,7 +212,7 @@ img.bg {
 
 /* Added to shift content down below the navbar */
 hr {
-	margin-top: 45px;
+	margin-top: 40px;
 }
 
 /* Add stuff for map */
@@ -289,25 +267,6 @@ hr {
 	font-size:90%;
 }
 
-.list_bring {
-    list-style-type: none;
-	/*margin-left: 0;
-	padding-left: 1em;
-	text-indent: -1em;*/
-	text-align:justify;
-	font-size:110%;
-}
-
-.list_bring_outer {
-    list-style-type: none;
-    display:table;
-    margin:0 auto;
-	/*margin-left: 0;
-	padding-left: 1em;
-	text-indent: -1em;*/
-	text-align:justify;
-	font-size:110%;
-}
 .list_inline li {
 	display: inline;
 	padding: 10px;
@@ -325,4 +284,26 @@ hr {
     padding-right: 10px;
 	margin: 0;
 	border: 0;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 2033px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 2033px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
